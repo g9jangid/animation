@@ -41,7 +41,7 @@ export function $on(target, type, callback, capture) {
  * @param {boolean} [capture] Capture the event
  */
 export function $delegate(target, selector, type, handler, capture) {
-  const dispatchEvent = event => {
+  const dispatchEvent = (event) => {
     const targetElement = event.target;
     const potentialElements = target.querySelectorAll(selector);
 
